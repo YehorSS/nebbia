@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nebbia — tre notti di musica elettronica, Milano, 22—24.01.2027</title>
+<meta name="description" content="Festival di musica elettronica negli ex gasometri della Bovisa, Milano. Demo per portfolio.">
+<meta name="theme-color" content="#161616">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23161616'/%3E%3Cpath d='M7 25V7h4l10 12V7h4v18h-4L11 13v12z' fill='%23ff4d1a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+<script>try{if(localStorage.getItem('nebbia-lang')==='en')document.documentElement.lang='en'}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#plan" data-i18n="nav.plan">Il mio piano</a>
+
+<header class="hero">
+  <picture class="hero-pic"><img data-photo="fog" data-i18n-alt="hero.photo" alt="Nebbia di notte in una strada di Milano" fetchpriority="high"></picture>
+  <p class="hero-date">22—24.01.2027</p>
+  <nav class="hero-nav" aria-label="Menu">
+    <a href="#lineup" data-i18n="nav.lineup">Line-up</a>
+    <a href="#plan" data-i18n="nav.plan">Il mio piano</a>
+    <a href="#place" data-i18n="nav.place">Il luogo</a>
+    <a href="#tickets" data-i18n="nav.tickets">Biglietti</a>
+    <a href="#faq" data-i18n="nav.faq">Domande</a>
+    <button class="lang" type="button" data-lang data-i18n="lang.switch">English</button>
+  </nav>
+  <div class="hero-lede">
+    <p data-i18n="hero.lede">Tre notti di musica elettronica negli ex gasometri della Bovisa, Milano.</p>
+    <a class="btn" href="#tickets" data-i18n="hero.cta">Biglietti da 35 €</a>
+  </div>
+  <h1 class="word">NEBBIA</h1>
+</header>
+
+<main>
+  <section id="lineup" class="lineup" aria-labelledby="lineup-h">
+    <div class="head">
+      <h2 id="lineup-h" data-i18n="lineup.h">Line-up</h2>
+      <p class="sub" data-lineup-sub></p>
+    </div>
+    <div data-lineup></div>
+  </section>
+
+  <section id="plan" class="plan" aria-labelledby="plan-h">
+    <h2 id="plan-h" class="big" data-i18n="plan.h">Il mio piano</h2>
+    <p class="sub" data-i18n="plan.sub">Segna i set che vuoi vedere.</p>
+    <div class="nights" role="tablist" data-nights></div>
+    <div class="grid" data-grid></div>
+    <ol class="list" data-list></ol>
+    <p class="legend" data-i18n="plan.legend">Tratteggio = si accavalla con un altro set scelto</p>
+    <div class="summary" aria-live="polite" data-summary></div>
+    <div class="plan-actions">
+      <button class="btn" type="button" data-share data-i18n="plan.share">Copia il link del piano</button>
+      <button class="btn ghost" type="button" data-clear data-i18n="plan.clear">Svuota</button>
+    </div>
+  </section>
+
+  <section id="place" class="place" aria-labelledby="place-h">
+    <h2 class="big" id="place-h" data-i18n="place.title">La Goccia, Bovisa</h2>
+    <div class="place-split">
+      <figure class="tall"><img data-photo="gasometro" data-i18n-alt="photo.gasometro" alt="" loading="lazy"><figcaption data-i18n="photo.gasometro">Il gasometro della Bovisa</figcaption></figure>
+      <div class="place-text">
+        <p data-i18n="place.p1"></p>
+        <p data-i18n="place.p2"></p>
+        <p data-i18n="place.p3"></p>
+        <p class="strong" data-i18n="place.p4"></p>
+      </div>
+    </div>
+    <dl class="facts">
+      <div><dt>33</dt><dd data-i18n="fact.ha">ettari di fabbrica</dd></div>
+      <div><dt>1984</dt><dd data-i18n="fact.gas">l’ultimo gas</dd></div>
+      <div><dt>2000+</dt><dd data-i18n="fact.trees">alberi contati nel 1995</dd></div>
+      <div><dt>1879</dt><dd data-i18n="fact.station">apre la stazione Bovisa</dd></div>
+    </dl>
+    <figure class="wide"><img data-photo="yard" data-i18n-alt="photo.yard" alt="" loading="lazy"><figcaption data-i18n="photo.yard"></figcaption></figure>
+    <div class="map-wrap">
+      <svg class="map" viewBox="0 0 640 420" role="img" data-map></svg>
+    </div>
+    <div class="go">
+      <h3 class="mid" data-i18n="go.h">Come arrivare</h3>
+      <div class="go-text">
+        <p data-i18n="go.train"></p>
+        <p data-i18n="go.night"></p>
+        <p class="muted" data-i18n="go.morning"></p>
+      </div>
+      <figure class="go-board"><img data-photo="board" data-i18n-alt="photo.board" alt="" loading="lazy"><figcaption data-i18n="photo.board"></figcaption></figure>
+      <figure class="go-platform"><img data-photo="platform" data-i18n-alt="photo.platform" alt="" loading="lazy"><figcaption data-i18n="photo.platform"></figcaption></figure>
+    </div>
+  </section>
+
+  <section id="tickets" class="tickets" aria-labelledby="tix-h">
+    <h2 id="tix-h" class="big" data-i18n="tix.h">Biglietti</h2>
+    <div class="tix">
+      <article><h3 data-i18n="tix.one">Una notte</h3><p class="price">45 €</p><p data-i18n="tix.one.d"></p><button class="btn" type="button" data-buy data-i18n="tix.buy">Scegli</button></article>
+      <article><h3 data-i18n="tix.dom">Domenica</h3><p class="price">35 €</p><p data-i18n="tix.dom.d"></p><button class="btn" type="button" data-buy data-i18n="tix.buy">Scegli</button></article>
+      <article class="all"><h3 data-i18n="tix.all">Tre notti</h3><p class="price">110 €</p><p data-i18n="tix.all.d"></p><button class="btn" type="button" data-buy data-i18n="tix.buy">Scegli</button></article>
+    </div>
+    <p class="incl" data-i18n="tix.incl"></p>
+    <p class="demo-note" aria-live="polite" data-buy-note></p>
+  </section>
+
+  <section id="faq" class="faq" aria-labelledby="faq-h">
+    <div class="faq-list">
+      <h2 id="faq-h" class="big" data-i18n="faq.h">Domande</h2>
+      <details><summary data-i18n="faq.q1"></summary><p data-i18n="faq.a1"></p></details>
+      <details><summary data-i18n="faq.q2"></summary><p data-i18n="faq.a2"></p></details>
+      <details><summary data-i18n="faq.q3"></summary><p data-i18n="faq.a3"></p></details>
+      <details><summary data-i18n="faq.q4"></summary><p data-i18n="faq.a4"></p></details>
+      <details open><summary data-i18n="faq.q5"></summary><p data-i18n="faq.a5"></p></details>
+      <details><summary data-i18n="faq.q6"></summary><p data-i18n="faq.a6"></p></details>
+    </div>
+    <figure class="faq-pic"><img data-photo="park" data-i18n-alt="photo.park" alt="" loading="lazy"><figcaption data-i18n="photo.park"></figcaption></figure>
+  </section>
+</main>
+
+<footer class="foot">
+  <p class="foot-word">NEBBIA</p>
+  <p class="foot-demo" data-i18n="foot.demo"></p>
+  <p class="credits" data-credits></p>
+  <button class="lang" type="button" data-lang data-i18n="lang.switch">English</button>
+</footer>
+<noscript><p class="noscript">Il programma completo e il piano personale hanno bisogno di JavaScript.</p></noscript>
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>
